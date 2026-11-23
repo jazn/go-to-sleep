@@ -50,7 +50,7 @@ class Overlay {
         });
         // Esc (if enabled in the settings) acts like "Yes".
         if (escCloses) {
-            this.actor.connect('key-press-event', (_actor, event) => {
+            this._keyPressId = this.actor.connect('key-press-event', (_actor, event) => {
                 if (event.get_key_symbol() !== Clutter.KEY_Escape)
                     return Clutter.EVENT_PROPAGATE;
                 this._onYes();
@@ -197,15 +197,18 @@ class Overlay {
         });
     }
 
-    close({animate}) {
+    destroy({animate}) {
         if (!this.actor)
             return;
-        const actor = this.actor;
-        this.actor = null;
 
         if (this._monitorsChangedId) {
             Main.layoutManager.disconnect(this._monitorsChangedId);
             this._monitorsChangedId = 0;
+        }
+
+        if (this._keyPressId) {
+            this.actor.disconnect(this._keyPressId);
+            this._keyPressId = 0;
         }
 
         if (this._grab) {
@@ -218,15 +221,20 @@ class Overlay {
         }
 
         if (animate) {
-            actor.ease({
+            this.actor.ease({
                 opacity: 0,
                 duration: 250,
                 mode: Clutter.AnimationMode.EASE_IN_QUAD,
-                onComplete: () => actor.destroy(),
+                onComplete: () => this._destroyActor(),
             });
         } else {
-            actor.destroy();
+            this._destroyActor();
         }
+    }
+
+    _destroyActor() {
+        this.actor?.destroy();
+        this.actor = null;
     }
 }
 
@@ -317,7 +325,7 @@ export default class GoToSleepExtension extends Extension {
         const overlay = this._overlay;
         this._overlay = null;
         this._manual = false;
-        overlay.close({animate});
+        overlay.destroy({animate});
     }
 
     _snooze() {
