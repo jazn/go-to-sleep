@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.go-to-sleep"
+          path="/org/gnome/shell/extensions/go-to-sleep/">
+    <key name="start-hour" type="i">
+      <range min="0" max="23"/>
+      <default>22</default>
+      <summary>Start hour</summary>
+      <description>From this hour (0-23) the window starts appearing. If equal to the end hour, the window never appears.</description>
+    </key>
+    <key name="end-hour" type="i">
+      <range min="0" max="23"/>
+      <default>6</default>
+      <summary>End hour</summary>
+      <description>From this hour (0-23) the window stops appearing.</description>
+    </key>
+    <key name="snooze-minutes" type="i">
+      <range min="1" max="240"/>
+      <default>10</default>
+      <summary>Interval in minutes</summary>
+      <description>After being dismissed the window returns after this many minutes.</description>
+    </key>
+    <key name="size-percent" type="i">
+      <range min="30" max="100"/>
+      <default>80</default>
+      <summary>Window size in percent</summary>
+      <description>Size of the card relative to the monitor size.</description>
+    </key>
+    <key name="message" type="s">
+      <default>''</default>
+      <summary>Question text</summary>
+      <description>Text shown in the window. Empty means the built-in (translated) default.</description>
+    </key>
+    <key name="esc-closes" type="b">
+      <default>false</default>
+      <summary>Esc closes the window</summary>
+      <description>When enabled, the Esc key closes the window like the "Yes" button. Off by default.</description>
+    </key>
+    <key name="show-shortcut" type="as">
+      <default><![CDATA[['<Super><Shift>z']]]></default>
+      <summary>Shortcut to show the window</summary>
+      <description>Keyboard shortcut that shows the question window immediately, regardless of the time.</description>
+    </key>
+  </schema>
+</schemalist>

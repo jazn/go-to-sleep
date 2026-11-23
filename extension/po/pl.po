@@ -1,0 +1,97 @@
+# Polish translation of Go To Sleep.
+# Copyright (C) 2026 Mateusz Niemojewski
+# This file is distributed under the same license as the go-to-sleep package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: go-to-sleep\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 22:06+0100\n"
+"PO-Revision-Date: 2026-11-21 22:10+0100\n"
+"Last-Translator: Mateusz Niemojewski\n"
+"Language-Team: Polish\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: extension.js:144
+#, javascript-format
+msgid "It is %s."
+msgstr "Jest %s."
+
+#: extension.js:159
+msgid "Yes"
+msgstr "Tak"
+
+#: extension.js:167
+msgid "No"
+msgstr "Nie"
+
+#: extension.js:306
+msgid "Are you doing something more meaningful than sleeping right now?"
+msgstr "Czy robisz teraz coś bardziej sensownego niż spanie?"
+
+#: prefs.js:29
+msgid "Schedule"
+msgstr "Harmonogram"
+
+#: prefs.js:30
+msgid "Hours are 0-23. Equal start and end hours mean no reminders."
+msgstr "Godziny w formacie 0-23. Równe godziny oznaczają brak przypomnień."
+
+#: prefs.js:33
+msgid "From hour"
+msgstr "Od godziny"
+
+#: prefs.js:34
+msgid "To hour"
+msgstr "Do godziny"
+
+#: prefs.js:35
+msgid "Interval (minutes)"
+msgstr "Odstęp (minuty)"
+
+#: prefs.js:38
+msgid "Appearance"
+msgstr "Wygląd"
+
+#: prefs.js:40
+msgid "Window size (% of monitor)"
+msgstr "Rozmiar okna (% monitora)"
+
+#: prefs.js:42
+msgid "Question text (empty = default)"
+msgstr "Tekst pytania (puste = domyślny)"
+
+#: prefs.js:47
+msgid "Esc closes the window"
+msgstr "Esc zamyka okno"
+
+#: prefs.js:48
+msgid "Acts like the \"Yes\" button. Off by default."
+msgstr "Działa jak przycisk „Tak”. Domyślnie wyłączone."
+
+#: prefs.js:54
+msgid "Keyboard shortcut"
+msgstr "Skrót klawiszowy"
+
+#: prefs.js:72
+msgid "Show the window now"
+msgstr "Pokaż okno teraz"
+
+#: prefs.js:73
+msgid "Click and press a new shortcut. Backspace clears it, Esc cancels."
+msgstr "Kliknij i naciśnij nowy skrót. Backspace usuwa skrót, Esc anuluje."
+
+#: prefs.js:79
+msgid "No shortcut"
+msgstr "Brak skrótu"
+
+#: prefs.js:106
+msgid "Press a new shortcut"
+msgstr "Naciśnij nowy skrót"
+
+#: prefs.js:107
+msgid "Esc cancels, Backspace clears the shortcut."
+msgstr "Esc anuluje, Backspace usuwa skrót."

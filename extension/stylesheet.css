@@ -1,0 +1,63 @@
+.gts-backdrop {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.gts-card {
+  background-color: rgba(14, 20, 48, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 40px;
+  padding: 48px;
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.65);
+}
+
+.gts-middle {
+  spacing: 28px;
+}
+
+.gts-title {
+  color: #f6f2ff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gts-sub {
+  color: rgba(214, 220, 255, 0.7);
+  text-align: center;
+}
+
+.gts-buttons {
+  spacing: 32px;
+}
+
+.gts-btn {
+  min-width: 180px;
+  padding: 14px 56px;
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gts-btn-yes {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.gts-btn-yes:hover,
+.gts-btn-yes:focus {
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.gts-btn-no {
+  background-color: #5b6cff;
+  border-color: #8f9bff;
+}
+
+.gts-btn-no:hover,
+.gts-btn-no:focus {
+  background-color: #7684ff;
+}
+
+.gts-btn:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}

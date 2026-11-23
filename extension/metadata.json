@@ -1,0 +1,11 @@
+{
+  "uuid": "go-to-sleep@niemojewski.eu",
+  "name": "Go To Sleep",
+  "description": "At night, periodically asks whether you are doing something more meaningful than sleeping. Yes dismisses the overlay for a while, No locks the screen. Hours, interval, size, text and shortcut are configurable.",
+  "gettext-domain": "go-to-sleep@niemojewski.eu",
+  "url": "https://github.com/jazn/go-to-sleep",
+  "shell-version": [
+    "51"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.go-to-sleep"
+}

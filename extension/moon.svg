@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.45"/>
+      <stop offset="0.6" stop-color="#ffd27a" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4c9"/>
+      <stop offset="1" stop-color="#ffc766"/>
+    </linearGradient>
+    <mask id="crescent">
+      <rect width="512" height="512" fill="#fff"/>
+      <circle cx="318" cy="214" r="128" fill="#000"/>
+    </mask>
+    <path id="spark" d="M0,-1 C0.12,-0.12 0.12,-0.12 1,0 C0.12,0.12 0.12,0.12 0,1 C-0.12,0.12 -0.12,0.12 -1,0 C-0.12,-0.12 -0.12,-0.12 0,-1 Z"/>
+  </defs>
+
+  <circle cx="256" cy="262" r="250" fill="url(#glow)"/>
+
+  <circle cx="248" cy="270" r="150" fill="url(#moon)" mask="url(#crescent)"/>
+
+  <!-- gwiazdy -->
+  <g fill="#fff6d6">
+    <use href="#spark" transform="translate(396 96) scale(26)"/>
+    <use href="#spark" transform="translate(448 232) scale(15)" opacity="0.9"/>
+    <use href="#spark" transform="translate(78 120) scale(18)" opacity="0.85"/>
+    <use href="#spark" transform="translate(120 430) scale(13)" opacity="0.7"/>
+    <use href="#spark" transform="translate(420 410) scale(20)" opacity="0.8"/>
+    <use href="#spark" transform="translate(190 60) scale(10)" opacity="0.7"/>
+  </g>
+
+  <!-- Zzz -->
+  <g fill="none" stroke="#c9d2ff" stroke-linecap="round" stroke-linejoin="round" transform="translate(28 -14)">
+    <path d="M300 320 h34 l-34 44 h34" stroke-width="9" opacity="0.95"/>
+    <path d="M354 262 h26 l-26 34 h26" stroke-width="7" opacity="0.8"/>
+    <path d="M398 216 h19 l-19 25 h19" stroke-width="5.5" opacity="0.6"/>
+  </g>
+</svg>
